@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapStoneProject", "MapStoneProject\MapStoneProject.csproj", "{E4BDD6F0-3190-49CD-862C-BA2AFA123654}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4BDD6F0-3190-49CD-862C-BA2AFA123654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BDD6F0-3190-49CD-862C-BA2AFA123654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BDD6F0-3190-49CD-862C-BA2AFA123654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BDD6F0-3190-49CD-862C-BA2AFA123654}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D129B7FC-3A5A-456D-BF9B-8E15B241187A}
+	EndGlobalSection
+EndGlobal
