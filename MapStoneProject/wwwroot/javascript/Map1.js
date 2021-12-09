@@ -26,37 +26,44 @@ L.tileLayer('../OSRSMap/OSRSTiles2/{z}/{x}/{y}.jpg',
 
 
 //Image links to anything used in teleport tooltips!
+var air = "<img style='width:32px;height:32px;' src='../images/Air.png'>";
+mind = "<img style='width:32px;height:32px;' src='../images/Mind.png'>";
+water = "<img style='width:32px;height:32px;' src='../images/Water.png'>";
+earth = "<img style='width:32px;height:32px;' src='../images/Earth.png'>";
+fire = "<img style='width:32px;height:32px;' src='../images/Fire.png'>";
+body = "<img style='width:32px;height:32px;' src='../images/Body.png'>";
+cosmic = "<img style='width:32px;height:32px;' src='../images/Cosmic.png'>";
 
+chaos = "<img style='width:32px;height:32px;' src='../images/Chaos.png'>";
+nature = "<img style='width:32px;height:32px;' src='../images/Nature.png'>";
+law = "<img style='width:32px;height:32px;' src='../images/Law.png'>";
+death = "<img style='width:32px;height:32px;' src='../images/Death.png'>";
+astral = "<img style='width:32px;height:32px;' src='../images/Astral.png'>";
+blood = "<img style='width:32px;height:32px;' src='../images/Blood (1).png'>";
+soul = "<img style='width:32px;height:32px;' src='../images/Soul.png'>";
+banana = "<img style='width:32px;height:32px;' src='../images/Banana.png'>";
+fairy_ring = "<img style='width:32px;height:32px;' src='https://i.ibb.co/m43f3YH/Fairy-ring.png'>";
+iron_ore = "<img style='width:32px;height:32px;' src='../images/iron-ore.png'>"
+gold_ore = "<img style='width:32px;height:32px;' src='../images/gold_ore.png'>"
+silver_ore = "<img style='width:32px;height:32px;' src='../images/silver_ore.png'>"
+runite_ore = "<img style='width:32px;height:32px;' src='../images/runite_ore.png'>"
+adamant_ore = "<img style='width:32px;height:32px;' src='../images/adamant_ore.png'>"
+coal_ore = "<img style='width:32px;height:32px;' src='../images/coal_ore.png'>"
+sandstone_ore = "<img style='width:32px;height:32px;' src='../images/sandstone_ore.png'>"
 
-var air = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Air.png'>";
-mind = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Mind.png'>";
-water = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Water.png'>";
-earth = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Earth.png'>";
-fire = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Fire.png'>";
-body = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Body.png'>";
-cosmic = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Cosmic.png'>";
-chaos = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Chaos.png'>";
-nature = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Nature.png'>";
-law = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Law.png'>";
-death = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Death.png'>";
-astral = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Astral.png'>";
-blood = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Blood.png'>";
-soul = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Soul.png'>";
-banana = "<img style='width:32px;height:32px;' src='https://general-543f.kxcdn.com/world-map/Runes/Banana.png'>";
-fairy_ring = "<img style='width:32px;height:32px;' src='https://i.ibb.co/m43f3YH/Fairy-ring.png'>"
 
 
 //Everything related to Standard Spellbook Teleport Markers
 
-var Varrock = L.marker([17.24312, 90.5712], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [32, 32], iconUrl:'https://general-543f.kxcdn.com/world-map/Standard/Varrock.png'})}).bindPopup('<div class="tth">Varrock Teleport</div><br> <strong>25 Magic</strong><br> Teleports you to the center of Varrock<br><br> <img src = "https://general-543f.kxcdn.com/items/law_rune.png" > <img src="https://general-543f.kxcdn.com/items/fire_rune.png"> <img src="https://general-543f.kxcdn.com/items/air_rune.png"> <br> <div class="rune-count">1 1 3</div>', { maxWidth: 500 })
-Lumbridge = L.marker([-10.505365912342125, 92.30712890625001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Lumbridge.png' }) }).bindPopup('<ttH>Lumbridge</ttH><br><b>31 Magic</b><br>Teleports you to Lumbridge castle courtyard<br><br>' + law + earth + air + '<br><runeCount>1 1 3</runeCount>', { maxWidth: 500 })
-Falador = L.marker([11.03151596829206, 57.81005859375001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Falador.png' }) }).bindPopup('<ttH>Falador</ttH><br><b>37 Magic</b><br>Teleports you to the Falador square<br><br>' + law + water + air + '<br><runeCount>1 1 3</runeCount>', { maxWidth: 500 })
-Camelot = L.marker([23.305684898790933, 30.739746093750004], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Camelot.png' }) }).bindPopup('<ttH>Camelot</ttH><br><b>45 Magic</b><br>Teleports you outside of the Camelot castle<br><br>' + law + air + fairy_ring + '<br><runeCount>1 5</runeCount>', { maxWidth: 500 })
-Ardougne = L.marker([1.124653114544988, 17.775878906250004], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Ardougne.png' }) }).bindPopup('<ttH>Ardougne</ttH><br><b>51 Magic<br>Requires completion of <a href="http://2007.runescape.wikia.com/wiki/Plague_City" target="_blank">Plague City</a></b><br>Teleports you to the Ardougne market<br><br>' + law + water + '<br><runeCount>2 2</runeCount>', { maxWidth: 500 })
-Watchtower = L.marker([-23.419148023565285, 2.83447265625], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Watchtower.png' }) }).bindPopup('<ttH>Watchtower</ttH><br><b>58 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Watchtower" target="_blank">Watchtower</a></b><br>Teleports you to the top of<br>Yanille watchtower<br><br>' + law + earth + '<br><runeCount>2 2</runeCount>', { maxWidth: 500 })
-Trollheim = L.marker([44.640322728862955, 48.27392578125001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Trollheim.png' }) }).bindPopup('<ttH>Trollheim</ttH><br><b>61 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Eadgar%27s_Ruse" target="_blank">Eadgars Ruse</a></b><br>Teleports you to the top of Trollheim<br><br>' + law + fire + '<br><runeCount>2 2', { maxWidth: 500 })
-ApeAtoll = L.marker([-55.73909514511557, 35.79345703125001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/ApeAtoll.png' }) }).bindPopup('<ttH>Ape Atoll</ttH><br><b>64 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Recipe_for_Disaster#Awowogei" target="_blank">RFD subquest</a></b><br>Teleports you to the second floor of<br>the monastery on Ape Atoll<br><br>' + law + fire + water + banana + '<br><runeCount>2 2 2 1</runeCount>', { maxWidth: 500 })
-Kourend = L.marker([44.26142900238292, -116.16943359375001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Standard/Kourend.png' }) }).bindPopup('<ttH>Kourend</ttH><br><b>69 Magic</b><br>Teleports you to the center of Great Kourend<br><br>' + law + soul + water + fire + '<br>2 2 4 5', { maxWidth: 500 })
+var Varrock = L.marker([17.24312, 90.5712], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [32, 32], iconUrl:'../images/Varrock.png'})}).bindPopup('<div class="tth">Varrock Teleport</div><br> <strong>25 Magic</strong><br> Teleports you to the center of Varrock<br><br>' + law + air + fire + '<br>1 1 3', { maxWidth: 500 })
+Lumbridge = L.marker([-10.505365912342125, 92.30712890625001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Lumbridge.png' }) }).bindPopup('<ttH>Lumbridge</ttH><br><b>31 Magic</b><br>Teleports you to Lumbridge castle courtyard<br><br>' + law + earth + air + '<br>1 1 3', { maxWidth: 500 })
+Falador = L.marker([11.03151596829206, 57.81005859375001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Falador.png' }) }).bindPopup('<ttH>Falador</ttH><br><b>37 Magic</b><br>Teleports you to the Falador square<br><br>' + law + water + air + '<br>1 1 3', { maxWidth: 500 })
+Camelot = L.marker([23.305684898790933, 30.739746093750004], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Camelot.png' }) }).bindPopup('<ttH>Camelot</ttH><br><b>45 Magic</b><br>Teleports you outside of the Camelot castle<br><br>' + law + air + fairy_ring + '<br>1 5', { maxWidth: 500 })
+Ardougne = L.marker([1.124653114544988, 17.775878906250004], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Ardougne.png' }) }).bindPopup('<ttH>Ardougne</ttH><br><b>51 Magic<br>Requires completion of <a href="http://2007.runescape.wikia.com/wiki/Plague_City"">Plague City</a></b><br>Teleports you to the Ardougne market<br><br>' + law + water + '<br>2 2', { maxWidth: 500 })
+Watchtower = L.marker([-23.419148023565285, 2.83447265625], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Watchtower.png' }) }).bindPopup('<ttH>Watchtower</ttH><br><b>58 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Watchtower"">Watchtower</a></b><br>Teleports you to the top of<br>Yanille watchtower<br><br>' + law + earth + '<br>2 2', { maxWidth: 500 })
+Trollheim = L.marker([44.640322728862955, 48.27392578125001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Trollheim.png' }) }).bindPopup('<ttH>Trollheim</ttH><br><b>61 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Eadgar%27s_Ruse"">Eadgars Ruse</a></b><br>Teleports you to the top of Trollheim<br><br>' + law + fire + '<br>2 2', { maxWidth: 500 })
+ApeAtoll = L.marker([-55.73909514511557, 35.79345703125001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/ApeAtoll.png' }) }).bindPopup('<ttH>Ape Atoll</ttH><br><b>64 Magic<br>Completion of <a href="http://2007.runescape.wikia.com/wiki/Recipe_for_Disaster#Awowogei"">RFD subquest</a></b><br>Teleports you to the second floor of<br>the monastery on Ape Atoll<br><br>' + law + fire + water + banana + '<br>2 2 2 1', { maxWidth: 500 })
+Kourend = L.marker([44.26142900238292, -116.16943359375001], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Kourend.png' }) }).bindPopup('<ttH>Kourend</ttH><br><b>69 Magic</b><br>Teleports you to the center of Great Kourend<br><br>' + law + soul + water + fire + '<br>2 2 4 5', { maxWidth: 500 })
 
 
 var StandardMarkers = L.layerGroup([Varrock, Lumbridge, Falador, Camelot, Ardougne, Watchtower, Trollheim, ApeAtoll, Kourend]);
@@ -64,14 +71,14 @@ var StandardMarkers = L.layerGroup([Varrock, Lumbridge, Falador, Camelot, Ardoug
 
 //Everything related to Lunar Spellbook Teleport Markers
 
-var Moonclan = L.marker([62.8416715679386, -54.63294982910157], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Moonclan.png' }) }).bindPopup('<ttH>Moonclan</ttH><br><b>69 Magic</b><br>Teleports you to Lunar Isle<br><br>' + law + astral + earth + '<br><runeCount>1 2 2</runeCount>', { maxWidth: 500 });
-Ourania = L.marker([-6.344644288623892, -7.787246704101563], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Ourania.png' }) }).bindPopup('<ttH>Ourania</ttH><br><b>71 Magic<br>Talk to <a href="http://2007.runescape.wikia.com/wiki/Baba_Yaga" target="_blank">Baba Yaga</a> to unlock</b><br>Teleports you to outside of the Ourania Cave<br><br>' + law + astral + water + '<br><runeCount>1 2 1</runeCount>', { maxWidth: 500 });
-WaterbirthIsland = L.marker([50.32661459785906, 0.34263610839843756], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Waterbirth.png' }) }).bindPopup('<ttH>Waterbirth</ttH><br><b>72 Magic</b><br>Teleports you to Waterbirth Island<br><br>' + law + astral + water + '<br><runeCount>1 2 1</runeCount>', { maxWidth: 500 });
-BarbarianOutpost = L.marker([33.84589679025758, 0.6502532958984376], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Barbarian.png' }) }).bindPopup('<ttH>Barbarian</ttH><br><b>75 Magic</b><br>Teleports you to Barbarian Outpost<br><br>' + law + astral + fire + '<br><runeCount>2 2 3</runeCount>', { maxWidth: 500 });
-Khazard = L.marker([-18.452254808461078, 16.11900329589844], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Khazard.png' }) }).bindPopup('<ttH>Khazard</ttH><br><b>79 Magic</b><br>Teleports you to Port Khazard<br><br>' + law + astral + water + '<br><runeCount>2 2 4</runeCount>', { maxWidth: 500 });
-FishGuild = L.marker([12.954375086560455, 11.02134704589844], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/FishingGuild.png' }) }).bindPopup('<ttH>Fishing Guild</ttH><br><b>85 Magic</b><br>Teleports you to the Fishing Guild<br><br>' + law + astral + water + '<br><runeCount>3 3 10</runeCount>', { maxWidth: 500 });
-Catherby = L.marker([17.65776273554449, 36.641464233398445], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/Catherby.png' }) }).bindPopup('<ttH>Catherby</ttH><br><b>87 Magic</b><br>Teleports you to the Catherby<br><br>' + law + astral + water + '<br><runeCount>3 3 10</runeCount>', { maxWidth: 500 });
-IcePlateau = L.marker([63.59408879170181, 57.998886108398445], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://general-543f.kxcdn.com/world-map/Lunars/IcePlateau.png' }) }).bindPopup('<ttH>Ice Plateau</ttH><br><b>89 Magic</b><br>Teleports you to the Ice Plateau<br>in level 45 wilderness<br><br>' + law + astral + water + '<br><runeCount>3 3 10</runeCount>', { maxWidth: 500 });
+var Moonclan = L.marker([62.8416715679386, -54.63294982910157], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Moonclan.png' }) }).bindPopup('<ttH>Moonclan</ttH><br><b>69 Magic</b><br>Teleports you to Lunar Isle<br><br>' + law + astral + earth + '<br>1 2 2', { maxWidth: 500 });
+Ourania = L.marker([-6.344644288623892, -7.787246704101563], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Ourania.png' }) }).bindPopup('<ttH>Ourania</ttH><br><b>71 Magic<br>Talk to <a href="http://2007.runescape.wikia.com/wiki/Baba_Yaga">Baba Yaga</a> to unlock</b><br>Teleports you to outside of the ZMI runecrafting Altar<br><br>' + law + astral + water + '<br>1 2 1', { maxWidth: 500 });
+WaterbirthIsland = L.marker([50.32661459785906, 0.34263610839843756], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Waterbirth.png' }) }).bindPopup('<ttH>Waterbirth</ttH><br><b>72 Magic</b><br>Teleports you to the Waterbirth Island<br><br>' + law + astral + water + '<br>1 2 1', { maxWidth: 500 });
+BarbarianOutpost = L.marker([33.84589679025758, 0.6502532958984376], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Barbarian.png' }) }).bindPopup('<ttH>Barbarian</ttH><br><b>75 Magic</b><br>Teleports you to the Barbarian Outpost<br><br>' + law + astral + fire + '<br>2 2 3', { maxWidth: 500 });
+Khazard = L.marker([-18.452254808461078, 16.11900329589844], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Khazard.png' }) }).bindPopup('<ttH>Khazard</ttH><br><b>79 Magic</b><br>Teleports you to the Port Khazard<br><br>' + law + astral + water + '<br>2 2 4', { maxWidth: 500 });
+FishGuild = L.marker([12.954375086560455, 11.02134704589844], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/FishingGuild.png' }) }).bindPopup('<ttH>Fishing Guild</ttH><br><b>85 Magic</b><br>Teleports you to the Fishing Guild<br><br>' + law + astral + water + '<br>3 3 10', { maxWidth: 500 });
+Catherby = L.marker([17.65776273554449, 36.641464233398445], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Catherby.png' }) }).bindPopup('<ttH>Catherby</ttH><br><b>87 Magic</b><br>Teleports you to the town of Catherby<br><br>' + law + astral + water + '<br>3 3 10', { maxWidth: 500 });
+IcePlateau = L.marker([63.59408879170181, 57.998886108398445], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/IcePlateau.png' }) }).bindPopup('<ttH>Ice Plateau</ttH><br><b>89 Magic</b><br>Teleports you to the Ice Plateau<br>IN THE WILDERNESS<br><br>' + law + astral + water + '<br>3 3 10', { maxWidth: 500 });
 
 var lunarsMarkers = L.layerGroup([Moonclan, Ourania, WaterbirthIsland, BarbarianOutpost, Khazard, FishGuild, Catherby, IcePlateau]);
 
@@ -113,10 +120,37 @@ DLQ = L.marker([-34.40407704011786, 117.98423767089845], { icon: L.icon({ popupA
 DLR = L.marker([-25.112336726504633, -41.49330139160157], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: 'https://i.ibb.co/2Z9s5kb/fairy-ring.png' }) }).bindPopup('<h3> Fairy Ring: DLR</h3>', { maxWidth: 500 });
 var fairyRingMarkers = L.layerGroup([AIQ, AIR, AJR, AJS, AKQ, AKS, ALP, ALQ, ALS, BIP, BIQ, BIS, BJS, BKP, BLR, CIP, CIQ, CIS, CJR, CKR, CKS, CLP, CLR, CLS, DIS, DJP, DJR, DKP, DKR, DKS, DLQ, DLR]);
 
+
+
+AlKharidMine = L.marker([0.043945308191358085, 101.79450988769531], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Al Kharid</ttH><br><br>' + iron_ore + gold_ore + silver_ore, { maxWidth: 500 });
+BanditQuarryMine = L.marker([-45.33670190996811, 85.13923645019531], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Bandit Sandstone Mine</ttH><br><br>' + sandstone_ore, { maxWidth: 500 });
+LumbyMine1 = L.marker([-19.559790136497412, 92.43415832519533], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Lumbridge Mine 1</ttH><br><br>' + iron_ore + coal_ore , { maxWidth: 500 });
+LumbyMine2 = L.marker([-19.31114335506464, 81.84333801269533], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Lumbridge Mine 2</ttH><br><br>' + iron_ore + coal_ore, { maxWidth: 500 });
+ArdyMine = L.marker([4.3464112753331925, 23.132400512695316], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Ardougne Mine</ttH><br><br>' + iron_ore, { maxWidth: 500 });
+VarrockMine1 = L.marker([9.260713181867581, 85.72837829589845], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Varrock Mine 1</ttH><br><br>' + iron_ore + silver_ore + coal_ore, { maxWidth: 500 });
+VarrockMine2 = L.marker([8.696426643238569, 99.65904235839845], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Varrock Mine 2 </ttH><br><br>' + iron_ore , { maxWidth: 500 });
+IsafdarMine = L.marker([-17.895114303749143, -32.941818237304695], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Isafdar Mine</ttH><br><br>' + adamant_ore, { maxWidth: 500 });
+DwarvenMine = L.marker([19.642587534013032, 64.66072082519533], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/crystal_pickaxe.png' }) }).bindPopup('<ttH>Dwarven Mine</ttH><br><br>' + iron_ore + gold_ore + silver_ore + adamant_ore + runite_ore, { maxWidth: 500 });
+var miningMarkers = L.layerGroup([AlKharidMine, BanditQuarryMine, LumbyMine1, LumbyMine2, ArdyMine, VarrockMine1, VarrockMine2, IsafdarMine, DwarvenMine]);
+
+
+
+castleWarTeakTree = L.marker([-31.253900198429022, -25.409317016601566], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Tree.png' }) }).bindPopup('<ttH>Castle Wars Teak Tree</ttH><br><br>' , { maxWidth: 500 });
+camelotMagicTree = L.marker([13.025965926333539, 23.527908325195316], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Tree.png' }) }).bindPopup('<ttH>Camelot Magic Tree</ttH><br><br>' , { maxWidth: 500 });
+alkharidMagicTree = L.marker([1.5818302639606454, 110.67146301269533], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Tree.png' }) }).bindPopup('<ttH>Al-Kharid Magic Training Arena Magic Tree</ttH><br><br>', { maxWidth: 500 });
+apeAtollTeakTree = L.marker([-61.897577621605016, 32.58064270019532], { icon: L.icon({ popupAnchor: [0, -16], iconAnchor: [16, 16], iconUrl: '../images/Tree.png' }) }).bindPopup('<ttH>This is the Ape Atoll Teak Tree</ttH><br><br>', { maxWidth: 500 });
+
+var woodcuttingMarkers = L.layerGroup([castleWarTeakTree, camelotMagicTree, alkharidMagicTree, apeAtollTeakTree]);
+
+
+
+
 var overlayMaps = {
     "Standard Spellbook Teleports": StandardMarkers,
     "Lunar Spellbook Teleports": lunarsMarkers,
     "Fairy Ring Locations": fairyRingMarkers,
+    "Mining Locations": miningMarkers,
+    "Woodcutting Locations": woodcuttingMarkers
     
 };
 
